@@ -139,7 +139,17 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CollectionManager.cpp" />
+    <ClCompile Include="ConsoleUI.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="StorageService.cpp" />
+    <ClCompile Include="VideoGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CollectionManager.h" />
+    <ClInclude Include="ConsoleUI.h" />
+    <ClInclude Include="StorageService.h" />
+    <ClInclude Include="VideoGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
