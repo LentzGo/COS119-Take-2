@@ -2,11 +2,14 @@
 //
 
 #include "CollectionManager.h"
+#include "StorageService.h"
 #include "ConsoleUI.h"
 
 int main() {
     CollectionManager myCollection;
-    ConsoleUI app(myCollection);
+    StorageService saveStorage("game_vault_data.txt");
+    ConsoleUI app(myCollection, saveStorage);
+
     app.run();
     return 0;
 }
